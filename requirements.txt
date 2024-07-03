@@ -1,0 +1,12 @@
+google-cloud-aiplatform >= 1.31.0
+flask
+google-cloud-logging
+scikit-learn
+fsspec
+gcsfs
+pandas
+twilio
+google-cloud-firestore
+firebase-admin
+google-cloud-secret-manager
+pyarrow >= 3.0.0
