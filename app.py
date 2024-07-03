@@ -43,12 +43,7 @@ database_df = pd.read_csv(blob.open())
 PROJECT_ID = "chatbot-test-428223"  
 LOCATION = "us-central1"  
 vertexai.init(project=PROJECT_ID, location=LOCATION)
-# Initialize Firebase Admin SDK
-#service_account_key = json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT_KEY'])
-#cred = credentials.Certificate(service_account_key)
-#firebase_admin.initialize_app(cred)
-# Access Firestore
-#db = firestore.client()
+
 all_books_db = pd.read_csv('gs://chatbot-waldor/merged_file.csv')
 def create_session():
     chat_model = ChatModel.from_pretrained("chat-bison@001")
